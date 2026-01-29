@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+  
+<style type="text/css">
+
+body {
+    margin: 0;
+    padding: 0;
+}
+</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tomtom</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+     <body>
+      <div>
+        london-transport-dashboard-back-up-v4/<br>
+├─ package.json  (root scripts orchestrate frontend & backend)<br>
+├─ frontend/<br>
+│  ├─ package.json<br>
+│  │   ├─ Runtime: Node (ESM) + Vite dev server<br>
+│  │   ├─ Framework: React 18<br>
+│  │   ├─ Bundler/Dev: Vite (+ @vitejs/plugin-react)<br>
+│  │   ├─ GraphQL client: @apollo/client, graphql<br>
+│  │   └─ Map: leaflet, react-leaflet<br>
+│  ├─ src/<br>
+│  │   └─ `main.jsx` (React entry) → `App.jsx`<br>
+│  └─ styles/ (`App.css`)<br>
+├─ backend/<br>
+│  ├─ package.json<br>
+│  │   ├─ Runtime: Node (ESM)<br>
+│  │   ├─ Framework: Express<br>
+│  │   ├─ GraphQL server: @apollo/server + graphql<br>
+│  │   ├─ HTTP clients: axios, node-fetch<br>
+│  │   └─ Misc: cors, dotenv<br>
+│  └─ `server.js` (Apollo/Express GraphQL server; TFL integration)<br>
+├─ scripts/ (backend fetch scripts, vehicle fetchers)<br>
+└─ public/ (frontend static assets)
+      </div>
+      <embed type="text/html" src="https://justinw.uk/map" style="margin-left:auto; margin-right:auto; width:100%; height: 90vh;">
+     </body>
+</html>
